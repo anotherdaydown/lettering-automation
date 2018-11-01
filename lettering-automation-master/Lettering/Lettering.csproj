@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEDB73E8-0E97-4978-8AE3-F6C7B6B47B05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lettering</RootNamespace>
+    <AssemblyName>Lettering</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\</OutputPath>
+    <IntermediateOutputPath>..\..\build\</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\FieldData.cs" />
+    <Compile Include="Data\JsonConfigData.cs" />
+    <Compile Include="Data\FilePaths.cs" />
+    <Compile Include="Errors\ErrorHandler.cs" />
+    <Compile Include="Forms\AddExportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddExportWindow.Designer.cs">
+      <DependentUpon>AddExportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPathRuleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPathRuleWindow.Designer.cs">
+      <DependentUpon>AddPathRuleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfigLoadingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigLoadingWindow.Designer.cs">
+      <DependentUpon>ConfigLoadingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditorWindow.Designer.cs">
+      <DependentUpon>EditorWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditStyleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditStyleWindow.Designer.cs">
+      <DependentUpon>EditStyleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddTrimWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTrimWindow.Designer.cs">
+      <DependentUpon>AddTrimWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InputWindow.Designer.cs">
+      <DependentUpon>InputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportProgressWindow.Designer.cs">
+      <DependentUpon>ReportProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FontCheckingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FontCheckingWindow.Designer.cs">
+      <DependentUpon>FontCheckingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\CsvReader.cs" />
+    <Compile Include="IO\SqlConnector.cs" />
+    <Compile Include="IO\TextWriter.cs" />
+    <Compile Include="Setup\FontChecker.cs" />
+    <Compile Include="Forms\ActiveOrderWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActiveOrderWindow.Designer.cs">
+      <DependentUpon>ActiveOrderWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\ConfigReader.cs" />
+    <Compile Include="IO\ReportReader.cs" />
+    <Compile Include="IO\CsvWriter.cs" />
+    <Compile Include="Forms\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lettering.cs" />
+    <Compile Include="Data\OrderData.cs" />
+    <Compile Include="Setup\LibraryInstaller.cs" />
+    <Compile Include="Messaging\Messenger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Setup\SetupManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CorelDRAW">
+      <Guid>{FBF4300F-D921-11D1-B806-00A0C90646A9}</Guid>
+      <VersionMajor>17</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VGCore">
+      <Guid>{95E23C91-BC5A-49F3-8CD1-1FC515597048}</Guid>
+      <VersionMajor>17</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ActiveOrderWindow.resx">
+      <DependentUpon>ActiveOrderWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddExportWindow.resx">
+      <DependentUpon>AddExportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPathRuleWindow.resx">
+      <DependentUpon>AddPathRuleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigLoadingWindow.resx">
+      <DependentUpon>ConfigLoadingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditorWindow.resx">
+      <DependentUpon>EditorWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditStyleWindow.resx">
+      <DependentUpon>EditStyleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTrimWindow.resx">
+      <DependentUpon>AddTrimWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InputWindow.resx">
+      <DependentUpon>InputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportProgressWindow.resx">
+      <DependentUpon>ReportProgressWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FontCheckingWindow.resx">
+      <DependentUpon>FontCheckingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>robocopy "$(SolutionDir)configs" "$(TargetDir)configs" /IS
+if errorlevel 1 exit 0
+if errorlevel 0 exit 0</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
