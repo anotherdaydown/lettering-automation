@@ -51,6 +51,8 @@ namespace Lettering.Data {
         public Data_StyleData Cut;
         public Data_StyleData Sew;
         public Data_StyleData Stone;
+        public Data_StyleData ASFStone;
+        public Data_StyleData Pht;
     }
 
     public class Data_StyleData {

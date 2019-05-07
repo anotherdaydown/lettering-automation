@@ -1,11 +1,17 @@
 {
   "Setup": {
     "FilePaths": {
-      "NetworkFontsFolderPath": "\\\\path\\to\\VS Fonts\\",
-      "NetworkLibraryFilePath": "\\\\path\\to\\libaray\\file\\Automation.gms",
+      "NetworkFontsFolderPath": "\\\\vsc-fs01\\Lettering\\Corel\\WORK FOLDERS\\VS Fonts\\",
+      "NetworkLibraryFilePath": "\\\\vsc-fs01\\Lettering\\Corel\\WORK FOLDERS\\Automation\\Automation.gms",
       "InstalledLibraryFilePath": "C:\\Program Files\\Corel\\CorelDRAW Graphics Suite X7\\Draw\\GMS\\Automation.gms"
     },
     "StylePrefixes": [
+      {
+        "Value": "BG"
+      },
+      {
+        "Value": "FEL"
+      },
       {
         "Value": "FL"
       },
@@ -55,6 +61,9 @@
         "Value": "RX"
       },
       {
+        "Value": "SP"
+      },
+      {
         "Value": "SS"
       },
       {
@@ -73,7 +82,28 @@
         "Value": "TT"
       },
       {
+        "Value": "TTP"
+      },
+      {
         "Value": "VTT"
+      },
+      {
+        "Value": "SDC"
+      },
+      {
+        "Value": "TSASF"
+      },
+      {
+        "Value": "RSASF"
+      },
+      {
+        "Value": "RUASF"
+      },
+      {
+        "Value": "PHT"
+      },
+      {
+        "Value": "CF"
       }
     ],
     "Trims": [
@@ -172,9 +202,29 @@
       {
         "Pattern": "W$",
         "_Comment": "Womens - ASF"
+      },
+      {
+        "Pattern": "-YPS$",
+        "_Comment": "Pro Shop Youth"
+      },
+      {
+        "Pattern": "YPS$",
+        "_Comment": "Pro Shop Youth"
+      },
+      {
+        "Pattern": "-P$",
+        "_Comment": "Package"
       }
     ],
     "Exports": [
+      {
+        "StyleRegex": "^FEL",
+        "FileType": "Plt"
+      },
+      {
+        "StyleRegex": "^FL",
+        "FileType": "Plt"
+      },
       {
         "StyleRegex": "^HP",
         "FileType": "Plt"
@@ -189,6 +239,10 @@
       },
       {
         "StyleRegex": "^PKPFI",
+        "FileType": "Plt"
+      },
+      {
+        "StyleRegex": "^SS",
         "FileType": "Plt"
       },
       {
@@ -218,10 +272,22 @@
       {
         "StyleRegex": "^TTLLFBL",
         "FileType": "Eps"
+      },
+      {
+        "StyleRegex": "TT",
+        "FileType": "Eps"
       }
     ],
     "TypeData": {
+      "ASFStone": {
+        "Root": "\\\\memap-nas01\\vsrhinestone\\Inline\\InlineStyles\\ASF STYLES\\",
+        "Extension": "dsg"
+      },
       "Cut": {
+        "Root": "\\\\memap-nas01\\VSLettering\\Inline\\",
+        "Extension": "cdr"
+      },
+      "PHT": {
         "Root": "\\\\memap-nas01\\VSLettering\\Inline\\",
         "Extension": "cdr"
       },
@@ -254,6 +320,10 @@
       {
         "Id": "names",
         "Rule": "names"
+      },
+      {
+        "Id": "plant",
+        "Rule": "plant"
       },
       {
         "Id": "style",
@@ -294,6 +364,108 @@
     ]
   },
   "Styles": {
+    "BG1BLN": {
+      "Cut": {
+        "Rule": "names"
+      }
+    },
+    "BG1FBLN": {
+      "Cut": {
+        "Rule": "names"
+      }
+    },
+    "BGHTARCBAR2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTARMS2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTARS2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTBFDB2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTBL": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "HT1BLN"
+      }
+    },
+    "BGHTCGBAR2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTFBL": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "HT1FBLN"
+      }
+    },
+    "BGHTFNPR2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTMBL": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTNOSTK2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTPAW": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "BGHTSPLSS2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "BGHTSTCB2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "CF1857BT": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "CF1857U": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "CF1857UC": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "CFACOU4L": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "CS1857U": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "DARBMNB": {
       "Cut": {
         "Rule": "mirror",
@@ -314,12 +486,36 @@
         "MirroredStyle": "PFDARBMN"
       }
     },
+    "FELPENFBL": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "HPBFBX": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "ignore"
+      }
+    },
     "HPBRB": {
       "Cut": {
         "Rule": "style_CUT FILES"
       },
       "Sew": {
         "Rule": "cut-sew_files"
+      }
+    },
+    "HPBRBZ": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
       }
     },
     "HPBXL": {
@@ -337,6 +533,17 @@
         ]
       }
     },
+    "HPGBST": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "cut-sew_files",
+        "CustomWordOrder": [
+          2
+        ]
+      }
+    },
     "HPINU": {
       "Cut": {
         "Rule": "style_CUT FILES",
@@ -350,6 +557,61 @@
         "CustomWordOrder": [
           2
         ]
+      }
+    },
+    "HPKOBMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "HPLASP": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "HPOVLP": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "cut-sew_files",
+        "CustomWordOrder": [
+          2
+        ]
+      }
+    },
+    "HPSJCMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "HT1BLN": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "HT1FBLN": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "HT2LLWD": {
@@ -381,6 +643,20 @@
         "Rule": "style_size"
       }
     },
+    "HTABWMN2": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files",
+        "CustomWordOrder": [
+          2
+        ]
+      }
+    },
     "HTADEC": {
       "Cut": {
         "Rule": "style_CUT FILES"
@@ -396,9 +672,45 @@
         "Rule": "style_size_ya"
       }
     },
+    "HTARCBAR2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
     "HTARW2": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "HTAS2": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTBARBL": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "HTBARBL2": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "HTBARBL2CC": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "HTBARBL2"
+      }
+    },
+    "HTBARFBL": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "HTBARFBL2": {
+      "Cut": {
+        "Rule": "style_spec"
       }
     },
     "HTBARSBL2": {
@@ -464,6 +776,11 @@
           1,
           3
         ]
+      }
+    },
+    "HTBFDB2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "HTBHV": {
@@ -574,6 +891,20 @@
         ]
       }
     },
+    "HTBRDGRAR": {
+      "Cut": {
+        "Rule": "style_size_spec",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
+    "HTBRTL3": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
     "HTBRUSH2": {
       "Cut": {
         "Rule": "style_CUT FILES"
@@ -598,12 +929,22 @@
         "Rule": "style_CUT FILES"
       }
     },
+    "HTBXWD": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
     "HTCBBL2": {
       "Cut": {
         "Rule": "style_size_spec"
       }
     },
     "HTCBFBL2": {
+      "Cut": {
+        "Rule": "style_size_spec"
+      }
+    },
+    "HTCBFFBLO2": {
       "Cut": {
         "Rule": "style_size_spec"
       }
@@ -632,6 +973,11 @@
         ]
       }
     },
+    "HTCGBAR2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
     "HTCHEERMN": {
       "Cut": {
         "Rule": "ignore"
@@ -640,9 +986,24 @@
         "Rule": "cut-sew_files"
       }
     },
+    "HTCHV": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTCHV2": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "HTCLOIS": {
       "Cut": {
         "Rule": "style_size"
+      }
+    },
+    "HTCRC": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "HTCRCI": {
@@ -720,6 +1081,11 @@
         "Rule": "style_CUT FILES"
       }
     },
+    "HTDAN": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "HTDANCEMN": {
       "Cut": {
         "Rule": "ignore",
@@ -739,6 +1105,11 @@
     "HTDARL2": {
       "Cut": {
         "Rule": "style_size_spec"
+      }
+    },
+    "HTDARLFBOS": {
+      "Cut": {
+        "Rule": "style_spec"
       }
     },
     "HTDARLST2": {
@@ -771,6 +1142,11 @@
     "HTDARO2": {
       "Cut": {
         "Rule": "style_size_spec"
+      }
+    },
+    "HTDAROFBOS": {
+      "Cut": {
+        "Rule": "style_spec"
       }
     },
     "HTDARONUO": {
@@ -928,6 +1304,11 @@
         "Exceptions": []
       }
     },
+    "HTFFBLO": {
+      "Cut": {
+        "Rule": "style_size_spec"
+      }
+    },
     "HTFFBLWD": {
       "Cut": {
         "Rule": "style_CUT FILES",
@@ -941,6 +1322,11 @@
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "HTFFBLWD"
+      }
+    },
+    "HTFNL": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "HTFSTL": {
@@ -1117,6 +1503,17 @@
         "MirroredStyle": "HTTLYD2"
       }
     },
+    "HTGTSMN2": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "HTGVLOGO": {
       "Cut": {
         "Rule": "mirror",
@@ -1133,6 +1530,12 @@
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "HTVONLY"
+      }
+    },
+    "HTGVSFLOGO": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "HTVSFLOGO"
       }
     },
     "HTGVSLOGO": {
@@ -1330,6 +1733,11 @@
         "Rule": "ignore"
       }
     },
+    "HTNOSTK2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
     "HTNU": {
       "Cut": {
         "Rule": "ignore"
@@ -1360,14 +1768,60 @@
         "Rule": "ignore"
       }
     },
+    "HTNUOL2CC": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "HTNUOL2"
+      }
+    },
+    "HTNUOLI": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTNUOLI2": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTOCBBL3": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTOCBSLIM3": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "HTOFBO": {
       "Cut": {
         "Rule": "style_CUT FILES"
       }
     },
+    "HTOFFBL3": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "HTOI2": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "HTOL3": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTONUI3": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTOSM": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "HTPAN": {
@@ -1434,6 +1888,11 @@
     "HTRCKWL": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "HTS2": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "HTSAMI": {
@@ -1540,6 +1999,11 @@
         "Rule": "style_CUT FILES"
       }
     },
+    "HTSPLSS2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
     "HTSPMN2": {
       "Cut": {
         "Rule": "style_CUT FILES",
@@ -1561,7 +2025,10 @@
     },
     "HTSQSLFW": {
       "Cut": {
-        "Rule": "style_CUT FILES"
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
       }
     },
     "HTSQSLMN": {
@@ -1590,6 +2057,16 @@
         "CustomWordOrder": [
           2
         ]
+      }
+    },
+    "HTSTCB2": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "HTSTFBL": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "HTSTKWBL": {
@@ -1632,6 +2109,11 @@
       }
     },
     "HTSW": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "HTTF": {
       "Cut": {
         "Rule": "style_CUT FILES"
       }
@@ -1701,6 +2183,16 @@
         "MirroredStyle": "HTVR"
       }
     },
+    "HTVSFLOGO": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "HTVSFLOGO2": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "HTVSLOGO": {
       "Cut": {
         "Rule": "ignore"
@@ -1741,10 +2233,58 @@
         "Rule": "ignore"
       }
     },
+    "ID1HASW1": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "ID3DFBL": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "ID3DFBLBR": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "ID3DNUI": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "ID4LL3DAR": {
+      "Cut": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ]
+      }
+    },
+    "ID4LLFBL": {
+      "Cut": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ]
+      }
+    },
     "IDAMODBL": {
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "TTAMODBL"
+      }
+    },
+    "IDBARBL2": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDBARFBL2": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "IDBL": {
@@ -1763,6 +2303,43 @@
         "Rule": "style_size"
       }
     },
+    "IDBLN12": {
+      "Cut": {
+        "Rule": "style_size",
+        "Exceptions": []
+      }
+    },
+    "IDBLN2": {
+      "Cut": {
+        "Rule": "style_size",
+        "Exceptions": []
+      }
+    },
+    "IDBLNCC": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "IDBLN"
+      }
+    },
+    "IDBRDGFBL": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDBRDGRAR": {
+      "Cut": {
+        "Rule": "style_size_spec",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
+    "IDBRN1": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "IDCBBL": {
       "Cut": {
         "Rule": "mirror",
@@ -1779,6 +2356,17 @@
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "TTCBWBL"
+      }
+    },
+    "IDCFC": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDDAR": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTDAR"
       }
     },
     "IDDARL": {
@@ -1805,6 +2393,12 @@
           2,
           1
         ]
+      }
+    },
+    "IDDARVS": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTDARVS"
       }
     },
     "IDDDAR": {
@@ -1843,7 +2437,22 @@
         "Rule": "style_size"
       }
     },
+    "IDFBLN12": {
+      "Cut": {
+        "Rule": "style_size"
+      }
+    },
+    "IDFBLN2": {
+      "Cut": {
+        "Rule": "style_size"
+      }
+    },
     "IDFFBL": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDHASN1": {
       "Cut": {
         "Rule": "ignore"
       }
@@ -1871,6 +2480,11 @@
         "MirroredStyle": "TTINTL"
       }
     },
+    "IDINTLWDS": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
     "IDL": {
       "Cut": {
         "Rule": "ignore"
@@ -1880,6 +2494,18 @@
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "TTLL3DAR"
+      }
+    },
+    "IDLL3WD": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTLL3WD"
+      }
+    },
+    "IDLL3WD3": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTLL3WD"
       }
     },
     "IDLLDAR": {
@@ -1904,9 +2530,20 @@
         "Rule": "ignore"
       }
     },
+    "IDMAS3CC": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "IDMAS3"
+      }
+    },
     "IDMASBL": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "IDMASCR": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "IDMASFBL": {
@@ -1935,9 +2572,49 @@
         "Rule": "ignore"
       }
     },
+    "IDNUI3CC": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "IDNUI"
+      }
+    },
     "IDNUOLBL": {
       "Cut": {
         "Rule": "style_size"
+      }
+    },
+    "IDNWN1": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDOSM": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDPENFBL": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "IDPENFBLW": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
+    "IDPINST": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDSLSTP2": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "IDSTILC": {
@@ -1949,6 +2626,62 @@
     "IDSTKDAR": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "IDSTRIPE12": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDSTRIPE17": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDSTSHI": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTSTSHI"
+      }
+    },
+    "IDV3DFBL": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDV3DFBLBR": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDV3DNUI": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDVBRDGFBL": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDVINTLWDS": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDVLOGO": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDVSFLOGO": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "IDVSLOGO": {
+      "Cut": {
+        "Rule": "ignore"
       }
     },
     "IDW": {
@@ -1969,6 +2702,60 @@
     "IDWTLVS": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "JVTASW2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTASW"
+      }
+    },
+    "JVTBRDG2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTBRDG"
+      }
+    },
+    "JVTDAR2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTDAR"
+      }
+    },
+    "JVTFFBL2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTFFBL2"
+      }
+    },
+    "JVTGT": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTGT"
+      }
+    },
+    "JVTGT2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTGT"
+      }
+    },
+    "JVTGT2-PKG": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTGT"
+      }
+    },
+    "JVTGT-PKG": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTGT"
+      }
+    },
+    "JVTSKBRDG2": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTBRDG"
       }
     },
     "MN2001": {
@@ -2001,6 +2788,11 @@
         "Rule": "style_SEW FILES"
       }
     },
+    "MNATUM": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "MNB1": {
       "Sew": {
         "Rule": "ignore"
@@ -2020,6 +2812,15 @@
     "MNBBAR": {
       "Sew": {
         "Rule": "style_SEW FILES"
+      }
+    },
+    "MNBBL": {
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
       }
     },
     "MNBDGS": {
@@ -2145,9 +2946,19 @@
         "Rule": "style_SEW FILES"
       }
     },
+    "MNBRLMWD": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "MNBROWD": {
       "Sew": {
         "Rule": "style_SEW FILES"
+      }
+    },
+    "MNBRP": {
+      "Sew": {
+        "Rule": "ignore"
       }
     },
     "MNBRUSH1": {
@@ -2241,6 +3052,11 @@
       }
     },
     "MNCRS": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "MNCSAR": {
       "Sew": {
         "Rule": "style_SEW FILES"
       }
@@ -2343,6 +3159,17 @@
         ]
       }
     },
+    "MNFRNK": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "MNFRNKCC": {
+      "Sew": {
+        "Rule": "mirror",
+        "MirroredStyle": "MNFRNK"
+      }
+    },
     "MNGIRLZ": {
       "Sew": {
         "Rule": "style_SEW FILES"
@@ -2416,6 +3243,39 @@
         "Rule": "style_SEW FILES"
       }
     },
+    "MNIOWCC": {
+      "Sew": {
+        "Rule": "mirror",
+        "MirroredStyle": "MNIOW"
+      }
+    },
+    "MNIOWOW": {
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
+    "MNISFB": {
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
+    "MNISFBL": {
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      }
+    },
     "MNIW": {
       "Sew": {
         "Rule": "style_SEW FILES"
@@ -2453,6 +3313,15 @@
     "MNLLECM": {
       "Sew": {
         "Rule": "style_SEW FILES"
+      }
+    },
+    "MNMASCR": {
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
       }
     },
     "MNMEGSW": {
@@ -2533,6 +3402,11 @@
       }
     },
     "MNOZ": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "MNPENFBL": {
       "Sew": {
         "Rule": "style_SEW FILES"
       }
@@ -2631,6 +3505,11 @@
     "MNSFL2": {
       "Sew": {
         "Rule": "style_size"
+      }
+    },
+    "MNSHRH": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
       }
     },
     "MNSIKEY": {
@@ -2737,6 +3616,11 @@
         "Rule": "style"
       }
     },
+    "MNSTKB": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "MNSTKBL": {
       "Sew": {
         "Rule": "style_SEW FILES"
@@ -2754,6 +3638,12 @@
     "MNSTKDAR": {
       "Sew": {
         "Rule": "style_SEW FILES"
+      }
+    },
+    "MNSTKDARCC": {
+      "Sew": {
+        "Rule": "mirror",
+        "MirroredStyle": "MNSTKDAR"
       }
     },
     "MNSTKFBL": {
@@ -2811,6 +3701,11 @@
         "Rule": "style_SEW FILES"
       }
     },
+    "MNULTH": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "MNWSTKBL": {
       "Sew": {
         "Rule": "style_SEW FILES"
@@ -2824,6 +3719,11 @@
     "MNZURIN": {
       "Sew": {
         "Rule": "style_SEW FILES"
+      }
+    },
+    "PF17PO-VC": {
+      "Sew": {
+        "Rule": "ignore"
       }
     },
     "PF17PO-VCCP": {
@@ -2863,6 +3763,29 @@
       },
       "Sew": {
         "Rule": "cut-specific"
+      }
+    },
+    "PFBLOLMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
+      }
+    },
+    "PFBMSTMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
       }
     },
     "PFBNK": {
@@ -2923,6 +3846,17 @@
         "Rule": "cut-specific"
       }
     },
+    "PFBSTMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
+      }
+    },
     "PFCHEERMN": {
       "Cut": {
         "Rule": "ignore"
@@ -2937,6 +3871,17 @@
       },
       "Sew": {
         "Rule": "cut-specific"
+      }
+    },
+    "PFCOIMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
       }
     },
     "PFCPR": {
@@ -3034,6 +3979,30 @@
     "PFCROMN": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
+      }
+    },
+    "PFCSMS": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "PFCSS": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1,
+          2
+        ]
       },
       "Sew": {
         "Rule": "cut-sew_files"
@@ -3211,6 +4180,17 @@
         "Rule": "cut-specific"
       }
     },
+    "PFHSCMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "PFLCBNK": {
       "Sew": {
         "Rule": "cut-specific"
@@ -3313,6 +4293,14 @@
         "CustomWordOrder": [
           1
         ]
+      },
+      "Sew": {
+        "Rule": "cut-sew_files"
+      }
+    },
+    "PFPCHMN": {
+      "Cut": {
+        "Rule": "ignore"
       },
       "Sew": {
         "Rule": "cut-sew_files"
@@ -3490,6 +4478,17 @@
         "Rule": "cut-sew_files"
       }
     },
+    "PFSSWMN": {
+      "Cut": {
+        "Rule": "style_CUT FILES",
+        "CustomWordOrder": [
+          1
+        ]
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
     "PFTIMN": {
       "Cut": {
         "Rule": "style_CUT FILES",
@@ -3515,6 +4514,71 @@
       },
       "Sew": {
         "Rule": "cut-specific"
+      }
+    },
+    "PHTBRTL3": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "PHTBRTL4": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "PHTCRCICF": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTCRCILC": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTCRCIWCF": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTCRCIWLC": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTDD4": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "PHTDDAR4": {
+      "Cut": {
+        "Rule": "style_spec"
+      }
+    },
+    "PHTFBLCR4": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTSHIWD": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTTIWD": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTTIWD4": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
+      }
+    },
+    "PHTWEARE": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "PKCHEER": {
@@ -3570,6 +4634,12 @@
         "Rule": "style_SEW FILES"
       }
     },
+    "RH051SH": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS051SH"
+      }
+    },
     "RH17B": {
       "Stone": {
         "Rule": "ignore"
@@ -3578,6 +4648,93 @@
     "RH17N": {
       "Stone": {
         "Rule": "ignore"
+      }
+    },
+    "RH180SCK": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS180SCK"
+      }
+    },
+    "RH1813LLP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "RH1813WB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "RH1816LP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS1816LP"
+      }
+    },
+    "RH1816LS": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS1816LS"
+      }
+    },
+    "RH1816N": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS1816N"
+      }
+    },
+    "RH1816SKF": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS1816SKF"
+      }
+    },
+    "RH1816WB": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS1816WB"
+      }
+    },
+    "RH181BLT": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS181BLT"
+      }
+    },
+    "RH182WB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "RH184N": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS184N"
+      }
+    },
+    "RH184UHP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS184UHP"
+      }
+    },
+    "RH188LS": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS188LS"
+      }
+    },
+    "RH188SP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS188SP"
+      }
+    },
+    "RH188US": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TS188US"
       }
     },
     "RH2HARTI": {
@@ -3606,6 +4763,18 @@
       "Stone": {
         "Rule": "mirror",
         "MirroredStyle": "TSBCBBL3"
+      }
+    },
+    "RHBCBMPTL2": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBCBMPTL2"
+      }
+    },
+    "RHBCBMPTL3": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBCBMPTL3"
       }
     },
     "RHBCBSLIM2": {
@@ -3647,6 +4816,12 @@
         "Rule": "style"
       }
     },
+    "RHBLDARY": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBLDARY"
+      }
+    },
     "RHBLL3WD": {
       "Stone": {
         "Rule": "mirror",
@@ -3657,6 +4832,23 @@
       "Stone": {
         "Rule": "mirror",
         "MirroredStyle": "TSBLLWD"
+      }
+    },
+    "RHBLM2": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBLM2"
+      }
+    },
+    "RHBLM3": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBLM3"
+      }
+    },
+    "RHBLV": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "RHBMODBL2": {
@@ -3731,6 +4923,12 @@
         "Rule": "ignore"
       }
     },
+    "RHCHVI": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSCHVI"
+      }
+    },
     "RHCR": {
       "Stone": {
         "Rule": "mirror",
@@ -3789,6 +4987,12 @@
         "Rule": "style_size"
       }
     },
+    "RHFBLV": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "RHFBL"
+      }
+    },
     "RHFBOB": {
       "Stone": {
         "Rule": "style"
@@ -3813,6 +5017,12 @@
       "Stone": {
         "Rule": "mirror",
         "MirroredStyle": "TSHASWB"
+      }
+    },
+    "RHHM": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSHM"
       }
     },
     "RHIOW": {
@@ -3853,6 +5063,12 @@
         ]
       }
     },
+    "RHLLP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSLLP"
+      }
+    },
     "RHLOVE": {
       "Stone": {
         "Rule": "style"
@@ -3863,6 +5079,18 @@
         "Rule": "style"
       }
     },
+    "RHLSIP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSLSIP"
+      }
+    },
+    "RHLSP": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSLSP"
+      }
+    },
     "RHMAS": {
       "Stone": {
         "Rule": "ignore"
@@ -3871,6 +5099,15 @@
     "RHMEG": {
       "Stone": {
         "Rule": "ignore"
+      }
+    },
+    "RHMN": {
+      "Sew": {
+        "Rule": "ignore"
+      },
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSMN"
       }
     },
     "RHMPTL": {
@@ -3888,6 +5125,12 @@
         "Rule": "ignore"
       }
     },
+    "RHNP1": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSNP1"
+      }
+    },
     "RHNU": {
       "Stone": {
         "Rule": "style"
@@ -3896,7 +5139,7 @@
     "RHO181": {
       "Stone": {
         "Rule": "mirror",
-        "MirroredStyle": "TSO 181"
+        "MirroredStyle": "TSO181"
       }
     },
     "RHO2LL": {
@@ -3909,9 +5152,38 @@
         "Rule": "style_size"
       }
     },
+    "RHO4LLDAR": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSO4LL3DAR"
+      }
+    },
+    "RHO4LLFBL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSO4LLFBL"
+      }
+    },
+    "RHOAMODBL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSOAMODBL"
+      }
+    },
     "RHOASW": {
       "Stone": {
         "Rule": "style_size_spec"
+      }
+    },
+    "RHOBL": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "RHOBLDAR": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSOBLDAR"
       }
     },
     "RHOBRLL": {
@@ -3939,14 +5211,32 @@
         "Rule": "style_size_spec"
       }
     },
+    "RHOCBMPTL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSOCBMPTL"
+      }
+    },
+    "RHOCBWBL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSOCBWBL"
+      }
+    },
     "RHOCNR": {
       "Stone": {
-        "Rule": "style_size_spec"
+        "Rule": "mirror",
+        "MirroredStyle": "TSOCNR"
       }
     },
     "RHODMDVS": {
       "Stone": {
         "Rule": "style_size_ya"
+      }
+    },
+    "RHOFBL": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "RHOFFBL": {
@@ -3965,6 +5255,12 @@
         "Rule": "style_size_spec"
       }
     },
+    "RHOGTL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSOGTL"
+      }
+    },
     "RHOL3": {
       "Stone": {
         "Rule": "mirror",
@@ -3973,7 +5269,15 @@
     },
     "RHOLBLWD": {
       "Stone": {
-        "Rule": "style_size"
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          1
+        ]
+      }
+    },
+    "RHOLL": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "RHOLL3DAR": {
@@ -3996,6 +5300,25 @@
       }
     },
     "RHOLL3SKBT": {
+      "Stone": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ],
+        "Exceptions": [
+          {
+            "Conditions": [
+              "Spec<9.5"
+            ],
+            "Path": {
+              "Value": "!type\\!style\\!size\\8.5"
+            }
+          }
+        ]
+      }
+    },
+    "RHOLL3WD": {
       "Stone": {
         "Rule": "style_size",
         "CustomWordOrder": [
@@ -4088,21 +5411,8 @@
     },
     "RHOLLFBL4": {
       "Stone": {
-        "Rule": "style_size",
-        "CustomWordOrder": [
-          2,
-          1
-        ],
-        "Exceptions": [
-          {
-            "Conditions": [
-              "Spec<9.5"
-            ],
-            "Path": {
-              "Value": "!type\\!style\\!size\\8.5"
-            }
-          }
-        ]
+        "Rule": "mirror",
+        "MirroredStyle": "TSOLLFBL4"
       }
     },
     "RHOLLSKBT": {
@@ -4188,6 +5498,11 @@
         "Rule": "style_size_spec"
       }
     },
+    "RHOWBL": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "RHPAN": {
       "Stone": {
         "Rule": "ignore"
@@ -4223,6 +5538,24 @@
         "Rule": "style"
       }
     },
+    "RHSKB": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSSKB"
+      }
+    },
+    "RHSKF": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSSKF"
+      }
+    },
+    "RHSKFV": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSSKFV"
+      }
+    },
     "RHSLS": {
       "Stone": {
         "Rule": "ignore"
@@ -4253,6 +5586,11 @@
         "Rule": "style"
       }
     },
+    "RHSP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "RHSPILLS": {
       "Stone": {
         "Rule": "style"
@@ -4261,6 +5599,11 @@
     "RHSPILLSW": {
       "Stone": {
         "Rule": "style"
+      }
+    },
+    "RHSTR": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "RHSW": {
@@ -4300,6 +5643,30 @@
         "Rule": "ignore"
       }
     },
+    "RHVSL": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSVSL"
+      }
+    },
+    "RHVWB": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSVWB"
+      }
+    },
+    "RHWB": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSWB"
+      }
+    },
+    "RHWBB": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSWBB"
+      }
+    },
     "RSTBBAR": {
       "Stone": {
         "Rule": "mirror",
@@ -4316,6 +5683,12 @@
       "Stone": {
         "Rule": "mirror",
         "MirroredStyle": "TSBLDARW"
+      }
+    },
+    "RSTBLDARY": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSBLDARY"
       }
     },
     "RSTBN": {
@@ -4514,9 +5887,71 @@
         "Rule": "ignore"
       }
     },
+    "SP2A": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SP2B": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SP2C": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SP3A": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SP3B": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SP3C": {
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "SPT12FWP1": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "ignore"
+      },
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "SPTY12FWP1": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "ignore"
+      },
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TBRDCN": {
       "Cut": {
         "Rule": "style_size_spec"
+      }
+    },
+    "TS051SH": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS180SCK": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TS181": {
@@ -4525,17 +5960,59 @@
         "MirroredStyle": "RH181"
       }
     },
-    "TSASFFADD": {
-      "Cut": {
-        "Rule": "style_size_spec"
-      },
+    "TS1816LP": {
       "Stone": {
-        "Rule": "style_spec"
+        "Rule": "ignore"
       }
     },
-    "TSASFFADU": {
-      "Cut": {
-        "Rule": "style_size_spec"
+    "TS1816LS": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS1816N": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS1816SKF": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS1816WB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS181BLT": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS184N": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS184UHP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS188LS": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS188SP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TS188US": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSBBAR": {
@@ -4568,6 +6045,30 @@
           {
             "Path": {
               "Value": "TSB STYLES\\TSB CBBL3\\!size\\!spec"
+            }
+          }
+        ]
+      }
+    },
+    "TSBCBMPTL2": {
+      "Stone": {
+        "Rule": "style_size_spec",
+        "Exceptions": [
+          {
+            "Path": {
+              "Value": "TSB STYLES\\TSB CBMPTL2\\!size\\!spec"
+            }
+          }
+        ]
+      }
+    },
+    "TSBCBMPTL3": {
+      "Stone": {
+        "Rule": "style_size_spec",
+        "Exceptions": [
+          {
+            "Path": {
+              "Value": "TSB STYLES\\TSB CBMPTL3\\!size\\!spec"
             }
           }
         ]
@@ -4641,6 +6142,11 @@
         "Rule": "style"
       }
     },
+    "TSBLDARY": {
+      "Stone": {
+        "Rule": "style"
+      }
+    },
     "TSBLL3WD": {
       "Stone": {
         "Rule": "style_size",
@@ -4684,6 +6190,21 @@
             }
           }
         ]
+      }
+    },
+    "TSBLM2": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSBLM3": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSBLV": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSBMODBL2": {
@@ -4774,6 +6295,11 @@
         "Rule": "ignore"
       }
     },
+    "TSCHVI": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TSCR": {
       "Stone": {
         "Rule": "style"
@@ -4826,6 +6352,12 @@
         "Rule": "style_size"
       }
     },
+    "TSFBLV": {
+      "Stone": {
+        "Rule": "mirror",
+        "MirroredStyle": "TSFBL"
+      }
+    },
     "TSFBOB": {
       "Stone": {
         "Rule": "style"
@@ -4844,6 +6376,16 @@
     "TSHEART2": {
       "Stone": {
         "Rule": "style"
+      }
+    },
+    "TSHM": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSHSH": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSIOW": {
@@ -4885,9 +6427,24 @@
         ]
       }
     },
+    "TSLLP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TSLOVE": {
       "Stone": {
         "Rule": "style"
+      }
+    },
+    "TSLSIP": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSLSP": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSMAS": {
@@ -4896,6 +6453,14 @@
       }
     },
     "TSMEG": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSMN": {
+      "Sew": {
+        "Rule": "ignore"
+      },
       "Stone": {
         "Rule": "ignore"
       }
@@ -4915,7 +6480,22 @@
         "Rule": "ignore"
       }
     },
+    "TSNP1": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TSNU": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSO151SS": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSO155SS": {
       "Stone": {
         "Rule": "ignore"
       }
@@ -4923,6 +6503,39 @@
     "TSO181": {
       "Stone": {
         "Rule": "ignore"
+      }
+    },
+    "TSO4LL3DAR": {
+      "Stone": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ]
+      }
+    },
+    "TSO4LLFBL": {
+      "Stone": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ]
+      }
+    },
+    "TSOAMODBL": {
+      "Stone": {
+        "Rule": "style_size_spec"
+      }
+    },
+    "TSOBL": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSOBLDAR": {
+      "Stone": {
+        "Rule": "style_size_spec"
       }
     },
     "TSOBRLL4": {
@@ -4933,6 +6546,26 @@
     "TSOCBBL": {
       "Stone": {
         "Rule": "style_size_spec"
+      }
+    },
+    "TSOCBMPTL": {
+      "Stone": {
+        "Rule": "style_size_spec"
+      }
+    },
+    "TSOCBWBL": {
+      "Stone": {
+        "Rule": "style_size_spec"
+      }
+    },
+    "TSOCNR": {
+      "Stone": {
+        "Rule": "style_size_spec"
+      }
+    },
+    "TSOFBL": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSOFFBL": {
@@ -4950,6 +6583,11 @@
         "Rule": "style_size_spec"
       }
     },
+    "TSOGTL": {
+      "Stone": {
+        "Rule": "style_size_spec"
+      }
+    },
     "TSOL3": {
       "Stone": {
         "Rule": "ignore"
@@ -4957,7 +6595,15 @@
     },
     "TSOLBLWD": {
       "Stone": {
-        "Rule": "style_size"
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          1
+        ]
+      }
+    },
+    "TSOLL": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSOLL3DAR": {
@@ -4966,6 +6612,25 @@
         "CustomWordOrder": [
           2,
           1
+        ]
+      }
+    },
+    "TSOLL3WD": {
+      "Stone": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ],
+        "Exceptions": [
+          {
+            "Conditions": [
+              "Spec<9.5"
+            ],
+            "Path": {
+              "Value": "!type\\!style\\!size\\8.5"
+            }
+          }
         ]
       }
     },
@@ -4981,7 +6646,35 @@
           2,
           1
         ],
-        "Exceptions": []
+        "Exceptions": [
+          {
+            "Conditions": [
+              "Spec<9.5"
+            ],
+            "Path": {
+              "Value": "!type\\!style\\!size\\8.5"
+            }
+          }
+        ]
+      }
+    },
+    "TSOLLFBL4": {
+      "Stone": {
+        "Rule": "style_size",
+        "CustomWordOrder": [
+          2,
+          1
+        ],
+        "Exceptions": [
+          {
+            "Conditions": [
+              "Spec<9.5"
+            ],
+            "Path": {
+              "Value": "!type\\!style\\!size\\8.5"
+            }
+          }
+        ]
       }
     },
     "TSOLLWD": {
@@ -5020,6 +6713,21 @@
       }
     },
     "TSOPAW": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSOSL5": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSOSL6": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSOWBL": {
       "Stone": {
         "Rule": "ignore"
       }
@@ -5069,6 +6777,21 @@
         "Rule": "style"
       }
     },
+    "TSSKB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSSKF": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSSKFV": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TSSLV": {
       "Stone": {
         "Rule": "ignore"
@@ -5097,6 +6820,11 @@
     "TSST": {
       "Stone": {
         "Rule": "style"
+      }
+    },
+    "TSSTR": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TSSW": {
@@ -5130,6 +6858,11 @@
         "Rule": "style"
       }
     },
+    "TSVL": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
     "TSVLOGO": {
       "Stone": {
         "Rule": "ignore"
@@ -5138,6 +6871,26 @@
     "TSVR": {
       "Stone": {
         "Rule": "style"
+      }
+    },
+    "TSVSL": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSVWB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSWB": {
+      "Stone": {
+        "Rule": "ignore"
+      }
+    },
+    "TSWBB": {
+      "Stone": {
+        "Rule": "ignore"
       }
     },
     "TT2LL": {
@@ -5162,7 +6915,7 @@
     },
     "TT97U": {
       "Cut": {
-        "Rule": "ignore"
+        "Rule": "style_size"
       }
     },
     "TT97U4": {
@@ -5292,7 +7045,12 @@
     },
     "TTBR": {
       "Cut": {
-        "Rule": "style_size"
+        "Rule": "ignore"
+      }
+    },
+    "TTBRDCN": {
+      "Cut": {
+        "Rule": "style_size_spec"
       }
     },
     "TTBRDG": {
@@ -5424,6 +7182,11 @@
     "TTCBCHV": {
       "Cut": {
         "Rule": "ignore"
+      }
+    },
+    "TTCBMPTL": {
+      "Cut": {
+        "Rule": "style_size_spec"
       }
     },
     "TTCBSLIM": {
@@ -5694,7 +7457,23 @@
         ]
       }
     },
+    "TTFBLML": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "TTFBLM"
+      }
+    },
     "TTFBLN": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "TTFFBL1": {
+      "Cut": {
+        "Rule": "ignore"
+      }
+    },
+    "TTFFBL2": {
       "Cut": {
         "Rule": "ignore"
       }
@@ -6145,11 +7924,74 @@
     "TTPAW": {
       "Cut": {
         "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "ignore"
+      }
+    },
+    "TTPAW3": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "ignore"
+      }
+    },
+    "TTPAW3-PKG": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "ignore"
       }
     },
     "TTPAWBI": {
       "Cut": {
         "Rule": "style_CUT FILES"
+      }
+    },
+    "TTPENFBL": {
+      "Cut": {
+        "Rule": "mirror",
+        "MirroredStyle": "FELPENFBL"
+      },
+      "Sew": {
+        "Rule": "mirror",
+        "MirroredStyle": "FELPENFBL"
+      }
+    },
+    "TTPFBL2CR": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "TTPKEY": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES"
+      }
+    },
+    "TTPMASCR": {
+      "Cut": {
+        "Rule": "ignore"
+      },
+      "Sew": {
+        "Rule": "style_SEW FILES",
+        "CustomWordOrder": [
+          1,
+          2,
+          3
+        ]
       }
     },
     "TTRAR": {
@@ -6192,7 +8034,7 @@
         "Rule": "ignore"
       }
     },
-    "TTRLL3WD": {
+    "TTRLL3WD3": {
       "Cut": {
         "Rule": "style_size",
         "CustomWordOrder": [
@@ -6211,7 +8053,7 @@
         ]
       }
     },
-    "TTRLLWD": {
+    "TTRLLWD3": {
       "Cut": {
         "Rule": "style_size",
         "CustomWordOrder": [
@@ -6228,6 +8070,11 @@
             }
           }
         ]
+      }
+    },
+    "TTSHWDTL2": {
+      "Cut": {
+        "Rule": "style_size_spec"
       }
     },
     "TTSKBRDG": {
@@ -6282,25 +8129,7 @@
     },
     "TTSQBT": {
       "Cut": {
-        "Rule": "style_size_ya",
-        "Exceptions": [
-          {
-            "Conditions": [
-              "size=5"
-            ],
-            "Path": {
-              "Value": "!type\\!style\\5INCH\\GUYS"
-            }
-          },
-          {
-            "Conditions": [
-              "spec=9.5"
-            ],
-            "Path": {
-              "Value": "!type\\!style\\4INCH\\YOUTH"
-            }
-          }
-        ]
+        "Rule": "style_size"
       }
     },
     "TTST067": {
@@ -6328,6 +8157,11 @@
         "Rule": "style_size"
       }
     },
+    "TTSTKA": {
+      "Cut": {
+        "Rule": "style_size_spec"
+      }
+    },
     "TTSTKALM": {
       "Cut": {
         "Rule": "style_size_spec"
@@ -6351,6 +8185,11 @@
     "TTSTRO": {
       "Cut": {
         "Rule": "ignore"
+      }
+    },
+    "TTSTSHI": {
+      "Cut": {
+        "Rule": "style_CUT FILES"
       }
     },
     "TTSW": {
@@ -6481,6 +8320,11 @@
       "Cut": {
         "Rule": "mirror",
         "MirroredStyle": "TTRKGL"
+      }
+    },
+    "YCFACOU4L": {
+      "Cut": {
+        "Rule": "ignore"
       }
     }
   }

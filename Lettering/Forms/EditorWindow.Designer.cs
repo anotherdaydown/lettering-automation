@@ -54,6 +54,16 @@
             this.buttonExportsAdd = new System.Windows.Forms.Button();
             this.dataGridExports = new System.Windows.Forms.DataGridView();
             this.tabStyleTypes = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxPHTExtension = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxPHTRoot = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBoxASFStoneExtension = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxASFStoneRoot = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.buttonSetupHelp = new System.Windows.Forms.Button();
             this.textBoxStoneExtension = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -459,6 +469,16 @@
             // 
             // tabStyleTypes
             // 
+            this.tabStyleTypes.Controls.Add(this.label16);
+            this.tabStyleTypes.Controls.Add(this.textBoxPHTExtension);
+            this.tabStyleTypes.Controls.Add(this.label17);
+            this.tabStyleTypes.Controls.Add(this.textBoxPHTRoot);
+            this.tabStyleTypes.Controls.Add(this.label18);
+            this.tabStyleTypes.Controls.Add(this.textBoxASFStoneExtension);
+            this.tabStyleTypes.Controls.Add(this.label15);
+            this.tabStyleTypes.Controls.Add(this.textBoxASFStoneRoot);
+            this.tabStyleTypes.Controls.Add(this.label14);
+            this.tabStyleTypes.Controls.Add(this.label13);
             this.tabStyleTypes.Controls.Add(this.buttonSetupHelp);
             this.tabStyleTypes.Controls.Add(this.textBoxStoneExtension);
             this.tabStyleTypes.Controls.Add(this.label8);
@@ -483,6 +503,98 @@
             this.tabStyleTypes.Text = "Style Types";
             this.tabStyleTypes.UseVisualStyleBackColor = true;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(23, 224);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(32, 13);
+            this.label16.TabIndex = 39;
+            this.label16.Text = "PHT";
+            // 
+            // textBoxPHTExtension
+            // 
+            this.textBoxPHTExtension.Location = new System.Drawing.Point(118, 247);
+            this.textBoxPHTExtension.Name = "textBoxPHTExtension";
+            this.textBoxPHTExtension.Size = new System.Drawing.Size(67, 20);
+            this.textBoxPHTExtension.TabIndex = 38;
+            this.textBoxPHTExtension.TextChanged += new System.EventHandler(this.textBoxPHTExtension_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(56, 250);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 13);
+            this.label17.TabIndex = 37;
+            this.label17.Text = "Extension:";
+            // 
+            // textBoxPHTRoot
+            // 
+            this.textBoxPHTRoot.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxPHTRoot.Location = new System.Drawing.Point(118, 221);
+            this.textBoxPHTRoot.Name = "textBoxPHTRoot";
+            this.textBoxPHTRoot.Size = new System.Drawing.Size(491, 20);
+            this.textBoxPHTRoot.TabIndex = 36;
+            this.textBoxPHTRoot.TextChanged += new System.EventHandler(this.textBoxPHTRoot_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(79, 224);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(33, 13);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Root:";
+            // 
+            // textBoxASFStoneExtension
+            // 
+            this.textBoxASFStoneExtension.Location = new System.Drawing.Point(118, 315);
+            this.textBoxASFStoneExtension.Name = "textBoxASFStoneExtension";
+            this.textBoxASFStoneExtension.Size = new System.Drawing.Size(67, 20);
+            this.textBoxASFStoneExtension.TabIndex = 34;
+            this.textBoxASFStoneExtension.TextChanged += new System.EventHandler(this.textBoxASFStoneExtension_TextChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(56, 318);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 13);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Extension:";
+            // 
+            // textBoxASFStoneRoot
+            // 
+            this.textBoxASFStoneRoot.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxASFStoneRoot.Location = new System.Drawing.Point(118, 289);
+            this.textBoxASFStoneRoot.Name = "textBoxASFStoneRoot";
+            this.textBoxASFStoneRoot.Size = new System.Drawing.Size(491, 20);
+            this.textBoxASFStoneRoot.TabIndex = 32;
+            this.textBoxASFStoneRoot.TextChanged += new System.EventHandler(this.textBoxASFStoneRoot_TextChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(79, 292);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(33, 13);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Root:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(11, 292);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(67, 13);
+            this.label13.TabIndex = 30;
+            this.label13.Text = "ASF Stone";
+            // 
             // buttonSetupHelp
             // 
             this.buttonSetupHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -501,6 +613,7 @@
             this.textBoxStoneExtension.Name = "textBoxStoneExtension";
             this.textBoxStoneExtension.Size = new System.Drawing.Size(67, 20);
             this.textBoxStoneExtension.TabIndex = 28;
+            this.textBoxStoneExtension.TextChanged += new System.EventHandler(this.textBoxStoneExtension_TextChanged);
             // 
             // label8
             // 
@@ -519,6 +632,7 @@
             this.textBoxStoneRoot.Name = "textBoxStoneRoot";
             this.textBoxStoneRoot.Size = new System.Drawing.Size(491, 20);
             this.textBoxStoneRoot.TabIndex = 26;
+            this.textBoxStoneRoot.TextChanged += new System.EventHandler(this.textBoxStoneRoot_TextChanged);
             // 
             // label9
             // 
@@ -535,6 +649,7 @@
             this.textBoxSewExtension.Name = "textBoxSewExtension";
             this.textBoxSewExtension.Size = new System.Drawing.Size(67, 20);
             this.textBoxSewExtension.TabIndex = 24;
+            this.textBoxSewExtension.TextChanged += new System.EventHandler(this.textBoxSewExtension_TextChanged);
             // 
             // label4
             // 
@@ -553,6 +668,7 @@
             this.textBoxSewRoot.Name = "textBoxSewRoot";
             this.textBoxSewRoot.Size = new System.Drawing.Size(491, 20);
             this.textBoxSewRoot.TabIndex = 22;
+            this.textBoxSewRoot.TextChanged += new System.EventHandler(this.textBoxSewRoot_TextChanged);
             // 
             // label7
             // 
@@ -599,6 +715,7 @@
             this.textBoxCutExtension.Name = "textBoxCutExtension";
             this.textBoxCutExtension.Size = new System.Drawing.Size(67, 20);
             this.textBoxCutExtension.TabIndex = 9;
+            this.textBoxCutExtension.TextChanged += new System.EventHandler(this.textBoxCutExtension_TextChanged);
             // 
             // label5
             // 
@@ -617,6 +734,7 @@
             this.textBoxCutRoot.Name = "textBoxCutRoot";
             this.textBoxCutRoot.Size = new System.Drawing.Size(491, 20);
             this.textBoxCutRoot.TabIndex = 7;
+            this.textBoxCutRoot.TextChanged += new System.EventHandler(this.textBoxCutRoot_TextChanged);
             // 
             // label6
             // 
@@ -885,5 +1003,15 @@
         private System.Windows.Forms.Button buttonStylesRemove;
         private System.Windows.Forms.Button buttonStylesAdd;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxASFStoneExtension;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBoxASFStoneRoot;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBoxPHTExtension;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBoxPHTRoot;
+        private System.Windows.Forms.Label label18;
     }
 }

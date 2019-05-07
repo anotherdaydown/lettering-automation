@@ -52,17 +52,19 @@ namespace Lettering {
             switch(reportType) {
                 case LetteringType.Cut:
                     styleClause = @"
-                        (d.dclas IN ('041', '049', '04C', '04D', '04Y', 'F09', 'JVT', 'L02', 'L05', 'L10', 'L14', 'PS3', 'S03', 'SKL', 'VTT', '04G')) AND 
-                        (d.ditem NOT LIKE 'OZ%') AND (d.ditem NOT LIKE 'COZ%') AND 
-                        (d.ditem NOT LIKE 'SP%') AND 
-                        (d.ditem NOT LIKE 'IDC%')";
+                        (d.dclas IN ('041', '049', '04C', '04D', '04Y', 'F09', 'JVT', 'L02', 'L05', 'L10', 'PS3', 'S03', 'SKL', 'VTT', '04G', 'BHT')) AND 
+                        (d.ditem NOT LIKE 'OZ%') AND (d.ditem NOT LIKE 'CF1857%') AND (d.ditem NOT LIKE 'COZ%') AND (d.ditem NOT LIKE 'HTC1%') AND (d.ditem NOT LIKE 'HTC0%') AND (d.ditem NOT LIKE 'HTC2%') AND
+                        (d.ditem NOT LIKE 'SP%') AND  (d.ditem NOT LIKE 'HTC3%') AND (d.ditem NOT LIKE 'HTC4%') AND (d.ditem NOT LIKE 'HTC5%') AND (d.ditem NOT LIKE 'HTC6%') AND 
+                        (d.ditem NOT LIKE 'HTC7%') AND (d.ditem NOT LIKE 'HTC8%') AND  (d.ditem NOT LIKE 'HTC9%') AND  (d.ditem NOT LIKE 'ICFC%') AND  (d.ditem NOT LIKE 'SDC%') AND
+                        (d.ditem NOT LIKE 'IDC%') AND (d.ditem NOT LIKE 'TTC0%') AND (d.ditem NOT LIKE 'TTC1%') AND (d.ditem NOT LIKE 'TTC2%') AND (d.ditem NOT LIKE 'TTC3%') AND 
+                        (d.ditem NOT LIKE 'TTC4%') AND (d.ditem NOT LIKE 'TTC5%') AND (d.ditem NOT LIKE 'TTC6%') AND (d.ditem NOT LIKE 'TTC7%') AND (d.ditem NOT LIKE 'TTC8%') AND (d.ditem NOT LIKE 'TTC9%') AND (d.ditem NOT LIKE 'MN%') ";
                     break;
                 case LetteringType.Sew:
                     styleClause += @"
-                        ((d.ditem LIKE '%MN%') OR (d.ditem LIKE 'PF%') OR (d.dlrea LIKE 'ASW') OR (d.ditem LIKE 'PK%') OR (d.ditem LIKE 'HP%')) AND 
+                        ((d.ditem LIKE '%MN%') OR (d.ditem LIKE 'PF%') OR (d.ditem LIKE 'FEL%') OR (d.ditem LIKE 'TTP%') OR (d.ditem LIKE 'SP%') OR (d.dlrea LIKE 'ASW')OR (d.ditem LIKE 'PK%')) AND 
                         ((d.ditem NOT LIKE '%CBSLIMN%') AND (d.ditem NOT LIKE '%SLIMN%') AND (d.ditem NOT LIKE '%PKEY%')) AND 
-                        (d.dclas NOT IN ('010', '045', '04A', '04B', '04M', '04O', '065', '075', '083', '086', '087', '089', 
-                                         '0DB', '0P1', '0P2', '112', 'CS2', 'S01', 'S02', 'SSO', 'STL')) AND 
+                        (d.dclas NOT IN ('010', '045', '04A', '04B', '04M', '04O', '063', '065', '075', '083', '086', '087', '089', 
+                                         '0DB', '0P1', '0P2', '0P6', '112', '123', 'CS2', 'P02', 'P06', 'S01', 'S02', 'SBP', 'SPT', 'SSO', 'STL')) AND 
                         ((d.ditem NOT LIKE 'MN2001%') AND (d.ditem NOT LIKE 'MN2002%') AND (d.ditem NOT LIKE 'MNB1%') AND (d.ditem NOT LIKE 'MNB2%') AND 
                          (d.ditem NOT LIKE 'MNB2N%') AND (d.ditem NOT LIKE 'MNBLN%') AND (d.ditem NOT LIKE 'MNBLNM%') AND (d.ditem NOT LIKE 'MNBL2N%') AND 
                          (d.ditem NOT LIKE 'MNBN1%') AND (d.ditem NOT LIKE 'MNBN2%') AND (d.ditem NOT LIKE 'MNBNCW%') AND (d.ditem NOT LIKE 'MNBNI%') AND 
@@ -81,7 +83,17 @@ namespace Lettering {
                 case LetteringType.Stone:
                     styleClause += @"
                         (d.dclas IN ('04U', '04V', '04W', 'L01', 'L03', 'L04', 'L09', 'F09', 'PS3', 'RSC', 'RSO', 'TSO')) AND 
-                        ((d.ditem LIKE 'RH%') OR (d.ditem LIKE 'TS%') OR (d.ditem LIKE 'RST%') OR (d.ditem Like 'RVOMMPT%'))";
+                        ((d.ditem LIKE 'RH%') OR (d.ditem LIKE 'TS%') OR (d.ditem LIKE 'TSB%') OR (d.ditem LIKE 'RHB%') OR (d.ditem LIKE 'RST%') OR (d.ditem Like 'RVOMMPT%'))";
+                    break;
+                case LetteringType.ASFStone:
+                    styleClause += @"
+                        (d.dclas IN ('L09' , 'L08')) AND 
+                        ((d.ditem LIKE 'RSASF%') OR (d.ditem LIKE 'TSASF%') OR (d.ditem LIKE 'RUASF%') OR (d.ditem LIKE 'RMASF%'))";
+                    break;
+                case LetteringType.PHT:
+                    styleClause += @"
+                        (d.dclas IN ('L16')) AND 
+                        ((d.ditem LIKE 'PHT%'))";
                     break;
                 default:
                     ErrorHandler.HandleError(ErrorType.Critical, "Invalid report type in RunReport.");

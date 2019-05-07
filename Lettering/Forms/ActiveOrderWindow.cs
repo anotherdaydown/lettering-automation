@@ -52,5 +52,10 @@ namespace Lettering {
             lblWord3.Text = order.word3;
             lblWord4.Text = order.word4;
         }
+
+        private void ActiveOrderWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

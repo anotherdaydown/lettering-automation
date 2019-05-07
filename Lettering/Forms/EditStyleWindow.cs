@@ -27,9 +27,8 @@ namespace Lettering.Forms {
 
                 //NOTE(adam): potentially temporary StyleData for ability to add properties through controls
                 if(workingStyle.Cut == null) workingStyle.Cut = new Data_StyleData();
-                if(workingStyle.Sew == null) workingStyle.Sew = new Data_StyleData();
+                if (workingStyle.Sew == null) workingStyle.Sew = new Data_StyleData();
                 if(workingStyle.Stone == null) workingStyle.Stone = new Data_StyleData();
-
                 PopulateControls();
             }
         }
@@ -108,10 +107,7 @@ namespace Lettering.Forms {
                     listBoxCutExPaths.DisplayMember = "Path";
 
                     if((Data_Exception)listBoxCutExPaths.SelectedItem != null) {
-                        List<string> conditions = ((Data_Exception)listBoxCutExPaths.SelectedItem).Conditions;
-                        if(conditions != null) {
-                            listBoxCutExConditions.DataSource = new BindingList<string>();
-                        }
+                        listBoxCutExConditions.DataSource = new BindingList<string>(((Data_Exception)listBoxCutExPaths.SelectedItem).Conditions);
                     }
                 }
             }
@@ -143,10 +139,7 @@ namespace Lettering.Forms {
                     listBoxSewExPaths.DisplayMember = "Path";
 
                     if((Data_Exception)listBoxSewExPaths.SelectedItem != null) {
-                        List<string> conditions = ((Data_Exception)listBoxSewExPaths.SelectedItem).Conditions;
-                        if(conditions != null) {
-                            listBoxSewExConditions.DataSource = new BindingList<string>();
-                        }
+                        listBoxSewExConditions.DataSource = new BindingList<string>(((Data_Exception)listBoxSewExPaths.SelectedItem).Conditions);
                     }
                 }
             }
@@ -178,10 +171,7 @@ namespace Lettering.Forms {
                     listBoxStoneExPaths.DisplayMember = "Path";
 
                     if((Data_Exception)listBoxStoneExPaths.SelectedItem != null) {
-                        List<string> conditions = ((Data_Exception)listBoxStoneExPaths.SelectedItem).Conditions;
-                        if(conditions != null) {
-                            listBoxStoneExConditions.DataSource = new BindingList<string>();
-                        }
+                        listBoxStoneExConditions.DataSource = new BindingList<string>(((Data_Exception)listBoxStoneExPaths.SelectedItem).Conditions);
                     }
                 }
             }
@@ -298,11 +288,7 @@ namespace Lettering.Forms {
                 if(((BindingList<Data_Exception>)listBoxCutExPaths.DataSource).Count > 0) {
                     //NOTE(adam): next item is automatically selected
                     ex = (Data_Exception)listBoxCutExPaths.SelectedItem;
-                    if(ex.Conditions != null) {
-                        listBoxCutExConditions.DataSource = new BindingList<string>(ex.Conditions);
-                    } else {
-                        listBoxCutExConditions.DataSource = null;
-                    }
+                    listBoxCutExConditions.DataSource = new BindingList<string>(ex.Conditions);
                 } else {
                     listBoxCutExPaths.DataSource = null;
                 }
@@ -443,11 +429,7 @@ namespace Lettering.Forms {
                 if(((BindingList<Data_Exception>)listBoxSewExPaths.DataSource).Count > 0) {
                     //NOTE(adam): next item is automatically selected
                     ex = (Data_Exception)listBoxSewExPaths.SelectedItem;
-                    if(ex.Conditions != null) {
-                        listBoxSewExConditions.DataSource = new BindingList<string>(ex.Conditions);
-                    } else {
-                        listBoxSewExConditions.DataSource = null;
-                    }
+                    listBoxSewExConditions.DataSource = new BindingList<string>(ex.Conditions);
                 } else {
                     listBoxSewExPaths.DataSource = null;
                 }
@@ -588,11 +570,7 @@ namespace Lettering.Forms {
                 if(((BindingList<Data_Exception>)listBoxStoneExPaths.DataSource).Count > 0) {
                     //NOTE(adam): next item is automatically selected
                     ex = (Data_Exception)listBoxStoneExPaths.SelectedItem;
-                    if(ex.Conditions != null) {
-                        listBoxStoneExConditions.DataSource = new BindingList<string>(ex.Conditions);
-                    } else {
-                        listBoxStoneExConditions.DataSource = null;
-                    }
+                    listBoxStoneExConditions.DataSource = new BindingList<string>(ex.Conditions);
                 } else {
                     listBoxStoneExPaths.DataSource = null;
                 }
@@ -664,13 +642,13 @@ namespace Lettering.Forms {
 
             workingStyle.Stone.MirroredStyle = (cboxStoneMirror.SelectedIndex > -1) ? (string)cboxStoneMirror.SelectedItem : null;
 
-
+            
             //NOTE(adam): removing unused temporary StyleData
-            if(workingStyle.Cut.Rule == null &&
+            if (workingStyle.Cut.Rule == null &&
                (workingStyle.Cut.CustomWordOrder == null || workingStyle.Cut.CustomWordOrder.Count == 0) &&
                workingStyle.Cut.MirroredStyle == null && 
                workingStyle.Cut.Exceptions == null) workingStyle.Cut = null;
-            if(workingStyle.Sew.Rule == null &&
+            if (workingStyle.Sew.Rule == null &&
                (workingStyle.Sew.CustomWordOrder == null || workingStyle.Sew.CustomWordOrder.Count == 0) &&
                workingStyle.Sew.MirroredStyle == null &&
                workingStyle.Sew.Exceptions == null) workingStyle.Sew = null;
@@ -684,7 +662,7 @@ namespace Lettering.Forms {
 
                 //NOTE(adam): reinitialize StyleData from being removed
                 if(workingStyle.Cut == null) workingStyle.Cut = new Data_StyleData();
-                if(workingStyle.Sew == null) workingStyle.Sew = new Data_StyleData();
+                if (workingStyle.Sew == null) workingStyle.Sew = new Data_StyleData();
                 if(workingStyle.Stone == null) workingStyle.Stone = new Data_StyleData();
 
                 this.DialogResult = DialogResult.None;

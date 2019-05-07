@@ -23,6 +23,7 @@ namespace Lettering {
         public string color2;
         public string color3;
         public string color4;
+        public string color5;
         public string rushDate;
         public string comment;
         public List<string> nameList;
@@ -47,6 +48,7 @@ namespace Lettering {
             this.color2 =           (row[FieldData.COLOR2.DbName].ToString()).Trim();
             this.color3 =           (row[FieldData.COLOR3.DbName].ToString()).Trim();
             this.color4 =           (row[FieldData.COLOR4.DbName].ToString()).Trim();
+            this.color5 =           (row[FieldData.COLOR5.DbName].ToString()).Trim();
             this.rushDate =          row[FieldData.RUSH_DATE.DbName] != DBNull.Value ? ((DateTime)row[FieldData.RUSH_DATE.DbName]).ToString("d") : "";
             this.comment = "";
             this.nameList = new List<string>();

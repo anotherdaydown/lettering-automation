@@ -40,6 +40,10 @@ namespace Lettering.Forms {
             textBoxSewExtension.DataBindings.Add("Text", editedConfig.Setup.TypeData["Sew"], "Extension");
             textBoxStoneRoot.DataBindings.Add("Text", editedConfig.Setup.TypeData["Stone"], "Root");
             textBoxStoneExtension.DataBindings.Add("Text", editedConfig.Setup.TypeData["Stone"], "Extension");
+            textBoxPHTRoot.DataBindings.Add("Text", editedConfig.Setup.TypeData["Cut"], "Root");
+            textBoxPHTExtension.DataBindings.Add("Text", editedConfig.Setup.TypeData["Cut"], "Extension");
+            textBoxASFStoneRoot.DataBindings.Add("Text", editedConfig.Setup.TypeData["Stone"], "Root");
+            textBoxASFStoneExtension.DataBindings.Add("Text", editedConfig.Setup.TypeData["Stone"], "Extension");
 
             //TODO(adam): define path rules info in better way
             dataGridPathRules.DataSource = new BindingList<Data_PathRule>(editedConfig.Setup.PathRules);
@@ -73,6 +77,12 @@ namespace Lettering.Forms {
                         break;
                     case LetteringType.Stone:
                         styleData = data.Stone;
+                        break;
+                    case LetteringType.PHT:
+                        styleData = data.Pht;
+                        break;
+                    case LetteringType.ASFStone:
+                        styleData = data.ASFStone;
                         break;
                 }
 
@@ -417,6 +427,61 @@ namespace Lettering.Forms {
                 editedConfig.Styles.Remove(selectedStyleNode.Text);
                 treeViewStyles.Nodes.Remove(selectedStyleNode);
             }
+        }
+
+        //private void label13_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void textBoxStoneRoot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSewRoot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCutRoot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPHTRoot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxASFStoneRoot_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxStoneExtension_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxASFStoneExtension_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCutExtension_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSewExtension_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPHTExtension_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

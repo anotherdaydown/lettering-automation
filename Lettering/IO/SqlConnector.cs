@@ -16,14 +16,14 @@ namespace Lettering.IO {
                         SELECT det.dhous, det.scdat, det.endat, det.ordnr, det.orvch, 
                                det.ditem, det.dlsiz, siz.letwid, nam.letname, 
                                det.dlwr1, det.dlwr2, det.dlwr3, det.dlwr4, 
-                               CASE WHEN det.ditem LIKE 'SIGN%' THEN clr.gclr ELSE TRIM(det.dclr1) END AS dclr1, det.dclr2, det.dclr3, det.dclr4, det.rudat
+                               CASE WHEN det.ditem LIKE 'SIGN%' THEN clr.gclr ELSE TRIM(det.dclr1) END AS dclr1, det.dclr2, det.dclr3, det.dclr4, det.dclr5, det.rudat
                         FROM (
                               SELECT d.dhous,
                                      CASE WHEN d.dscmo = 0 THEN NULL ELSE DATE(d.dsccy||d.dscyr||'-'||RIGHT('00'||d.dscmo, 2)||'-'||RIGHT('00'||d.dscda, 2)) END AS scdat, 
                                      DATE(d.dorcy||d.doryr||'-'||RIGHT('00'||d.dormo, 2)||'-'||RIGHT('00'||d.dorda, 2)) AS endat, 
                                      d.ordnr, d.orvch, d.dpvch, TRIM(d.ditem) AS ditem, d.dlsiz, 
                                      TRIM(d.dlwr1) as dlwr1, TRIM(d.dlwr2) as dlwr2, TRIM(d.dlwr3) as dlwr3, TRIM(d.dlwr4) as dlwr4, 
-                                     TRIM(d.dclr1) AS dclr1, TRIM(d.dclr2) AS dclr2, TRIM(d.dclr3) AS dclr3, TRIM(d.dclr4) AS dclr4, 
+                                     TRIM(d.dclr1) AS dclr1, TRIM(d.dclr2) AS dclr2, TRIM(d.dclr3) AS dclr3, TRIM(d.dclr4) AS dclr4, TRIM(d.dclr5) AS dclr5,
                                      CASE d.drumo WHEN 0 THEN NULL ELSE DATE(d.drucy||d.druyr||'-'||RIGHT('00'||d.drumo, 2)||'-'||RIGHT('00'||d.druda, 2)) END AS rudat 
 
                               FROM VARSITYF.DETAIL AS d

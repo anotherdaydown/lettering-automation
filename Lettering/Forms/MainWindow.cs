@@ -48,6 +48,17 @@ namespace Lettering {
             ExportReport(LetteringType.Stone);
         }
 
+        private void btnASFReport_Click(object sender, EventArgs e)
+        {
+            ExportReport(LetteringType.ASFStone);
+        }
+
+        private void btnPHTReport_Click(object sender, EventArgs e)
+        {
+            ExportReport(LetteringType.PHT);
+        }
+
+        
         private void ExportReport(LetteringType type) {
             DateTime? startDate = null;
             if(datePickerStart.Checked) {

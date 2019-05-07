@@ -42,6 +42,8 @@
             this.btnCsvAutomation = new System.Windows.Forms.Button();
             this.btnCheckMacroSetup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnASFReport = new System.Windows.Forms.Button();
+            this.btnPHTReport = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,12 +215,34 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "End Date:";
             // 
+            // btnASFReport
+            // 
+            this.btnASFReport.Location = new System.Drawing.Point(193, 165);
+            this.btnASFReport.Name = "btnASFReport";
+            this.btnASFReport.Size = new System.Drawing.Size(141, 29);
+            this.btnASFReport.TabIndex = 14;
+            this.btnASFReport.Text = "ASF Report";
+            this.btnASFReport.UseVisualStyleBackColor = true;
+            this.btnASFReport.Click += new System.EventHandler(this.btnASFReport_Click);
+            // 
+            // btnPHTReport
+            // 
+            this.btnPHTReport.Location = new System.Drawing.Point(41, 165);
+            this.btnPHTReport.Name = "btnPHTReport";
+            this.btnPHTReport.Size = new System.Drawing.Size(141, 29);
+            this.btnPHTReport.TabIndex = 15;
+            this.btnPHTReport.Text = "PHT Lettering Report";
+            this.btnPHTReport.UseVisualStyleBackColor = true;
+            this.btnPHTReport.Click += new System.EventHandler(this.btnPHTReport_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(385, 171);
+            this.ClientSize = new System.Drawing.Size(385, 209);
+            this.Controls.Add(this.btnPHTReport);
+            this.Controls.Add(this.btnASFReport);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCheckMacroSetup);
             this.Controls.Add(this.btnCsvAutomation);
@@ -263,5 +287,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkFontsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem viewErrorLogToolStripMenuItem1;
+        private System.Windows.Forms.Button btnASFReport;
+        private System.Windows.Forms.Button btnPHTReport;
     }
 }
